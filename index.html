@@ -1155,7 +1155,7 @@
   // Theme toggle
   const toggle = document.getElementById('themeToggle');
   const html = document.documentElement;
-  const saved = localStorage.getItem('theme') || 'light';
+  const saved = localStorage.getItem('theme') || 'dark';
   if (saved === 'dark') { html.setAttribute('data-theme','dark'); toggle.textContent = '☀️'; }
   toggle.addEventListener('click', () => {
     const isDark = html.getAttribute('data-theme') === 'dark';
